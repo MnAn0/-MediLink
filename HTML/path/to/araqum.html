@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <title>
+     Պատվիրված ապրանքներ
+  </title>
+  <form action="data.php" method="get"></form>
+  <p><input type="text" placeholder="id" name="id"></p>
+  <p><input type="text" placeholder="visa քարտի համար" name="visa"></p>
+  <p><input type="text" placeholder="Արժույթ" name="paid"></p>
+  <p><input type="text" placeholder="ընդհանուր" name="total"></p>
+  <label for="age">Քանակը՝ </label>
+  <select id="age" name="age">
+      
+  
+  </select>
+</form>
+
+<script>
+ 
+  const select = document.getElementById('age');
+
+  
+  for (let age = 1; age <= 100; age++) {
+      const option = document.createElement('option');
+      option.value = age;
+      option.textContent = age;
+      select.appendChild(option);
+  }
+</script>
+<p><button id="openPersonalPageBtn">Հաստատել</button>
+<script>
+  document.getElementById("openPersonalPageBtn").addEventListener("click", function() {
+    var link = document.createElement("a");
+  link.href ="Hastatvac ej.html"
+  link.target = "_blank"; 
+  link.click();
+});
+</script>
+</p>
+ 
+ 
+</head>
+  <body>
+    </html>

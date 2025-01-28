@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="utf-8">
+    <title>Գրանցում</title>
+   </head>
+  <body>
+    <form action="data.php" method="get"></form>
+   <input type="text" placeholder="Ծածկանուն" name="name"></p>
+   <p><input type="password" placeholder="Ծածկագիր" name="pass"></p>
+   <p>
+  <label> <input type="radio" name="Remember" >
+     Հիշել ինձ</label>
+    </p>
+      <button id="openPersonalPageBtn">Հաստատել</button>
+      <script>
+        document.getElementById("openPersonalPageBtn").addEventListener("click", function() {
+          var link = document.createElement("a");
+        link.href ="Hastatvac ej.html"
+        link.target = "_blank"; 
+        link.click();
+    });
+</script>
+
+
+
+<input type="reset" value="Մաքրել">
+</body>
+</html>

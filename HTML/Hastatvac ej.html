@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="utf-8">
+    <title>Account</title>
+   </head>
+   <body>
+    <form action="data.php" method="get"></form>
+    <input type="text" placeholder="Հասցե" name="Hasce"></p>
+    <input type="text" placeholder="Հեռախոսահամար" name="Number"></p>
+   
+    <p>
+        <label for="age">Տարիքը՝ </label>
+        <select id="age" name="age">
+            
+        
+        </select>
+    </form>
+
+    <script>
+       
+        const select = document.getElementById('age');
+
+        
+        for (let age = 18; age <= 100; age++) {
+            const option = document.createElement('option');
+            option.value = age;
+            option.textContent = age;
+            select.appendChild(option);
+        }
+    </script>
+    <p><input type="reset" value="Մաքրել"></p>
+    <img src="image/accounti nkar1.png" alt="">
+</body>
+</html>
+        
+    
+
+    
+
+
+   
+        
+    
